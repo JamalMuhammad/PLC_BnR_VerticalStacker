@@ -1,0 +1,59 @@
+Unit test: 3 parts unloading from buffer
+- turn "xUnloadPartCmd" > ON
+- wait for 1.5 sec
+- check "MpAxisBasic_0.MoveActive" > ON?
+- check "MpAxisBasic_0.MoveActive" > OFF?
+- turn "xPartUnloaded" > ON
+- wait 0.5 sec 
+- turn "xPartUnloaded" > OFF
+- check "enumState_part_unloading" > 4 ?
+- repeat 3 times with FOR loop
+
+
+Unit test_3 parts loading to buffer
+
+
+
+
+
+Unit test_4 parts unloading from buffer
+
+
+
+
+
+Unit test_2 parts loading to buffer
+
+
+
+
+
+Unit test_Emergency stop while parts unloading from buffer
+
+
+
+Unit test_Emergency stop RESET
+
+
+
+Unit test_Emergency stop while parts loading to buffer
+
+
+
+Unit test_Emergency stop RESET
+
+
+
+Unit test_Drive stop while parts unloading from buffer
+
+
+
+Unit test_Drive stop RESET
+
+
+
+Unit test_Drive stop while parts loading to buffer
+
+
+
+Unit test_Drive stop RESET

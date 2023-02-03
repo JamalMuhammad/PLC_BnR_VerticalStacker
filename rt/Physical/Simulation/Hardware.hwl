@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Simulation.Hardware.hw" LastWriteTime="05/08/2022 14:08:31" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20cCP3586" Type="X20cCP3586" X="103" Y="100" />
+    <Module Name="X20cIF1082-2" Type="X20cIF1082-2" X="215" Y="100" />
+    <Module Name="X20cBM11" Type="X20cBM11" X="303" Y="100" />
+    <Module Name="X20cDI9371" Type="X20cDI9371" X="303" Y="100" />
+    <Module Name="X20TB12" Type="X20TB12" X="303" Y="127" />
+    <Module Name="X20cBM11a" Type="X20cBM11" X="316" Y="100" />
+    <Module Name="X20cDO9321" Type="X20cDO9321" X="316" Y="100" />
+    <Module Name="X20TB12a" Type="X20TB12" X="316" Y="127" />
+    <Module Name="8BVI0014HWD0.000-1" Type="8BVI0014HWD0.000-1" X="329" Y="249" />
+    <Module Name="8BAC0120.000-1" Type="8BAC0120.000-1" X="348.6" Y="424" />
+    <Module Name="8BAC0120.000-1a" Type="8BAC0120.000-1" X="331.8" Y="424" />
+    <Module Name="8JSA33.E8045D000-0" Type="8JSA33.E8045D000-0" X="329" Y="654" />
+    <Module Name="8JSA33.E8045D000-0a" Type="8JSA33.E8045D000-0" X="329" Y="520" />
+  </Modules>
+  <Links>
+    <Link From="8BAC0120.000-1" To="8JSA33.E8045D000-0" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="355.4" Y="440.6" />
+      <Point X="355.4" Y="440.6" />
+      <Point X="366.4" Y="440.6" />
+      <Point X="412" Y="440.6" />
+      <Point X="412" Y="622" />
+      <Point X="350.5" Y="622" />
+      <Point X="350.5" Y="654" />
+      <Point X="350.5" Y="661" />
+      <Point X="350.5" Y="661" />
+    </Link>
+    <Link From="8BAC0120.000-1a" To="8JSA33.E8045D000-0a" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="338.599976" Y="440.6" />
+      <Point X="338.599976" Y="440.6" />
+      <Point X="328.599976" Y="440.6" />
+      <Point X="315" Y="440.6" />
+      <Point X="315" Y="492" />
+      <Point X="350.5" Y="492" />
+      <Point X="350.5" Y="520" />
+      <Point X="350.5" Y="527" />
+      <Point X="350.5" Y="527" />
+    </Link>
+    <Link From="8BVI0014HWD0.000-1" To="X20cIF1082-2" FromPort="PLK1" ToPort="IF1" IsRoutedByUser="False">
+      <Point X="229" Y="191" />
+      <Point X="229" Y="191" />
+      <Point X="229" Y="200" />
+      <Point X="229" Y="256" />
+      <Point X="328.9" Y="256" />
+      <Point X="340.9" Y="256" />
+      <Point X="340.9" Y="256" />
+    </Link>
+    <Link From="8BVI0014HWD0.000-1" To="8JSA33.E8045D000-0a" FromPort="MT1" ToPort="MT" IsRoutedByUser="False">
+      <Point X="345.1" Y="463.9" />
+      <Point X="345.1" Y="463.9" />
+      <Point X="345.1" Y="471.9" />
+      <Point X="345.1" Y="485" />
+      <Point X="378.5" Y="485" />
+      <Point X="378.5" Y="520" />
+      <Point X="378.5" Y="527" />
+      <Point X="378.5" Y="527" />
+    </Link>
+    <Link From="8BVI0014HWD0.000-1" To="8JSA33.E8045D000-0" FromPort="MT2" ToPort="MT" IsRoutedByUser="False">
+      <Point X="361.9" Y="463.9" />
+      <Point X="361.9" Y="463.9" />
+      <Point X="361.9" Y="471.9" />
+      <Point X="361.9" Y="478" />
+      <Point X="405" Y="478" />
+      <Point X="405" Y="615" />
+      <Point X="378.5" Y="615" />
+      <Point X="378.5" Y="654" />
+      <Point X="378.5" Y="661" />
+      <Point X="378.5" Y="661" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

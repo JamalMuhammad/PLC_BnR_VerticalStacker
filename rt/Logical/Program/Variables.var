@@ -1,0 +1,46 @@
+VAR
+	(*STRING*)
+	strMachineID : STRING[80] := 'VB_L2_M12';
+	(*BOOL*)
+	xLoadPartCmd : BOOL;
+	xUnloadPartCmd : BOOL;
+	xPartLoaded : BOOL;
+	xPartUnloaded : BOOL;
+	xPartLoadFirstCycle : BOOL;
+	xPartUnloadFirstCycle : BOOL;	
+	xAxisUpdateDone : BOOL;
+	xInit : BOOL;
+	xHomingCmd : BOOL;
+	xServoEnable : BOOL;
+	xServoError : BOOL;
+	xBufferFull : BOOL;
+	xEmergencyStopInactive_NC : BOOL := TRUE; (*Normally Closed(NC)*)
+	xDriveStopInactive_NC : BOOL := TRUE; (*Normally Closed(NC)*)
+	(*INTEGER*)
+	i : USINT;
+	j : USINT;
+	usiCounter : USINT;
+	usiTarget : USINT;
+	usiPartId : USINT;
+	(*REAL*)		
+	lrServoPosition : LREAL;	
+	(*TIMER*)
+	ton_1 : {REDUND_UNREPLICABLE} TON;
+	(*ARRAY*)
+	aServoMoveMode : ARRAY[1..2] OF BOOL; (*ARRAY[1]=Manual mode free, ARRAY[2]=Manual mode step,ARRAY[3]=Automatic mode *)
+	aBufferData : ARRAY[1..usiPartBufferMax] OF HolderData;	
+	(*ENUM*)
+	enumState_part_loading : STATE_PART_LOADING;
+	enumState_part_unloading : STATE_PART_UNLOADING;
+	(*STRUCT*)
+	stServoState : ServoState;
+	(*INSTANCES*)		
+	MpAxisBasic_0 : MpAxisBasic;
+	AxisParameters : MpAxisBasicParType;
+	(*FUNCTION BLOCK*)
+		
+END_VAR
+
+VAR CONSTANT
+	usiPartBufferMax : USINT := 20;
+END_VAR

@@ -1,2 +1,2 @@
-# PLC_BnR_VerticalStacker
-A PLC program written in Structured Text for Vertical Stacker. Automation Studio 4.10 Version is used. 
+
+PLC example project of vertical stacker written in Structured Text. Automation Studio version 4.10 was used as IDE.
